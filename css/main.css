@@ -1,0 +1,265 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+html, 
+body{
+    background:#253141;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(
+        to bottom, rgba(37,49,65,0.9) 0%,#253141 80%, #253141 100%), 
+        url('https://cdn.vox-cdn.com/thumbor/KaSnuQLMy2OUHHsWGsGmVYcYvzw=/0x0:3840x2160/1200x800/filters:focal(2202x23:2816x637)/cdn.vox-cdn.com/uploads/chorus_image/image/63025202/APEX_Legends_Screenshot_BYC_CausLifeMirage_Banners_Alt_04_Clean.0.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+}
+
+
+header{
+    display:flex;
+    justify-content: space-between;
+    padding:30px;
+}
+header .left-menu{
+    display:flex;
+  
+}
+header .left-menu .logo{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+header .left-menu .menu{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0 50px;
+}
+header .left-menu .menu a{
+    font-size:1.2rem;
+    text-decoration: none;
+    color:rgba(255,255,255,0.6);
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+}
+header .left-menu .menu a:hover{
+    color:rgba(255,255,255,1);
+}
+header .left-menu .menu a .fa{
+    margin-left: 10px;
+}
+header .right-menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header .right-menu .language{
+    font-size:1.2rem;
+    text-decoration: none;
+    color:rgba(255,255,255,0.6);
+    padding: 0 60px 0 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+header .right-menu .language:hover{
+    color:rgba(255,255,255,1);    
+}
+header .right-menu .language .fa{
+    margin-left: 10px;
+}
+header .right-menu .signin{
+    background: #0375d5;
+    border-radius: 4px;
+    padding:10px 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:white;
+    cursor: pointer;
+}
+.container{
+    width:1400px;
+    margin:0 auto;
+}
+.section-title{
+    font-size: 1.8rem;
+    color:white;
+    margin-bottom:30px;
+}
+#featured{
+    padding:50px 0 0 0;
+}
+
+#featured .videos-section {
+    display:grid;
+    grid-template-columns: 1fr 2fr 620px 2fr 1fr;
+    grid-gap: 10px;
+}
+#featured .videos-section .video{
+    display:flex;
+    justify-content: center ;
+    align-items: center;
+}
+#featured .videos-section .video .image{
+    width:100%;
+    height:300px;
+    background:url("#");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#featured .videos-section .video .image:hover{
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.75);
+}
+#featured .videos-section .center{
+    width:100%;
+    height:349px;
+    background: black;
+}
+#featured .videos-section .center .image{
+    width:100%;
+    height:349px;
+    background:url("https://www.gamehackstudios.com/wp-content/uploads/2015/07/Diablo-2-Cover.jpg");
+    transform: scale(1.03);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #00b4f0;
+    opacity: 0.7;
+}
+#featured .videos-section .center .image:hover{
+    transform: scale(1.15);
+    -webkit-box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.75);
+}
+#featured .videos-section .video:nth-child(1) .image, 
+#featured .videos-section .video:nth-child(5) .image{
+    position: relative;
+}
+#featured .videos-section .video:nth-child(1) .image .arrow{
+    height:100%;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    transition: all 0.2s ease-in-out;
+}
+#featured .videos-section .video:nth-child(1) .image .arrow:hover{
+    background: rgba(0,0,0,0.8);
+}
+#featured .videos-section .video:nth-child(5) .image .arrow{
+    height:100%;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    right:0;
+    transition: all 0.2s ease-in-out;
+}
+#featured .videos-section .video:nth-child(5) .image .arrow:hover{
+    background: rgba(0,0,0,0.8);
+}
+#featured .videos-section .video:nth-child(1) .image .arrow .fa,
+#featured .videos-section .video:nth-child(5) .image .arrow .fa
+{
+    font-size:4rem;
+    color: #00b4f0;
+}
+#featured .dots{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+#featured .dots .circles{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#featured .dots .circles .circle{
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#featured .dots .circles .circle .background-color{
+    width:7px;
+    height:7px;
+    border-radius: 50%;
+    background: white;
+    transition: all 0.2s ease-in-out;
+}
+#featured .dots .circles .circle:hover .background-color{
+    width:17px;
+    height:17px;
+    border-radius: 50%;
+    background: #00b4f0;
+
+}
+#featured .dots .circles .active .background-color{
+    width:17px;
+    height:17px;
+    border-radius: 50%;
+    background: #00b4f0;
+}
+
+#top-games{
+
+}
+#top-games .games{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap:10px;
+}
+#top-games .games .game{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTADbGAl7IMYh5EB78X6R4vA_RJF7EL542D97jdi8k1zjrTarEA");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    border-radius: 5px;
+    position:relative;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    overflow: hidden;
+    cursor: pointer;
+}
+#top-games .games .game .info{
+    background: #633132;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    padding:10px;
+    color: white; 
+    transition: all 0.2s ease-in-out;
+}
+#top-games .games .game:hover .info{
+    background: #603E3F;
+}
+#top-games .games .game .info .title{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#top-games .games .game .info .views{
+    font-weight: 300;
+    color:#8C919d;
+    font-size: 0.9rem;
+}
+#top-games .games .game .info .views .fa{
+    margin-right: 10px;
+}
